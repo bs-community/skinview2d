@@ -1,5 +1,5 @@
 /* eslint-disable */
-import { SkinvViewer2D } from '../libs/skinview2d';
+import { SkinViewer2D } from '../libs/skinview2d';
 
 export default {
   title: 'Skinview',
@@ -7,7 +7,7 @@ export default {
 
 export const ViewerFront = () => {
   const element = document.createElement('div');
-  const viewer = new SkinvViewer2D({
+  const viewer = new SkinViewer2D({
 		domElement: element,
 		skinUrl: 'texture/1_8_texturemap_redux.png',
 		width: 400,
@@ -24,7 +24,7 @@ export const ViewerFront = () => {
 
 export const SmallViewerFront = () => {
   const element = document.createElement('div');
-  const viewer = new SkinvViewer2D({
+  const viewer = new SkinViewer2D({
 		domElement: element,
 		skinUrl: 'texture/1_8_texturemap_redux.png',
 		width: 200,
@@ -41,7 +41,7 @@ export const SmallViewerFront = () => {
 
 export const ViewerBack = () => {
   const element = document.createElement('div');
-  const viewer = new SkinvViewer2D({
+  const viewer = new SkinViewer2D({
 		domElement: element,
 		skinUrl: 'texture/1_8_texturemap_redux.png',
 		width: 400,

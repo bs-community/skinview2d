@@ -29,12 +29,14 @@
   },
   "homepage": "https://github.com/bs-community/skinview2d#readme",
   "dependencies": {
+    "babel-loader": "^8.0.6",
     "skinview-utils": "^0.2.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.8.4",
     "@rollup/plugin-node-resolve": "^7.0.0",
     "@rollup/plugin-typescript": "^3.0.0",
-    "@storybook/html": "^5.3.9",
+    "@storybook/html": "^5.3.10",
     "@typescript-eslint/eslint-plugin": "^2.18.0",
     "@typescript-eslint/parser": "^2.18.0",
     "eslint": "^6.8.0",
@@ -42,6 +44,8 @@
     "rimraf": "^3.0.1",
     "rollup": "^1.31.0",
     "rollup-plugin-terser": "^5.2.0",
-    "typescript": "^3.7.5"
+    "typescript": "^3.7.5",
+    "babel-loader": "^8.0.6",
+    "local-web-server": "^3.0.7"
   }
 }

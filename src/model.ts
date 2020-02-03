@@ -1,10 +1,10 @@
 // import { TextureCanvas } from "skinview-utils";
-import { SkinvViewer2D } from "./skinview2d";
+import { SkinViewer2D } from "./skinview2d";
 
 class SkinObject2D {
-	private skinview: SkinvViewer2D;
+	private skinview: SkinViewer2D;
 
-	constructor(skinview: SkinvViewer2D) {
+	constructor(skinview: SkinViewer2D) {
 		this.skinview = skinview;
 	}
 

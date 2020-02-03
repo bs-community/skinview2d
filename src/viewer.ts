@@ -1,6 +1,5 @@
 import { SkinObject2D } from "./model";
-// import { TextureCanvas } from "skinview-utils";
-// TODO: create config for class
+// import { TextureCanvas, loadSk } from "skinview-utils";
 
 enum RenderPart {
 	HEAD_FRONT = 0,
@@ -9,7 +8,7 @@ enum RenderPart {
 	BODY_BACK = 3
 }
 
-interface SkinvViewer2DOptions {
+interface SkinViewer2DOptions {
 	domElement: HTMLElement;
 	skinUrl: string;
 	width?: number;
@@ -17,7 +16,7 @@ interface SkinvViewer2DOptions {
 	toRender?: string;
 }
 
-class SkinvViewer2D {
+class SkinViewer2D {
 	private canvas: HTMLCanvasElement;
 	private ctx: CanvasRenderingContext2D | null;
 	private domElement: HTMLElement;
@@ -26,7 +25,7 @@ class SkinvViewer2D {
 	private skinObject: SkinObject2D;
 	private toRender: number;
 
-	constructor(options: SkinvViewer2DOptions) {
+	constructor(options: SkinViewer2DOptions) {
 		this.domElement = options.domElement;
 		this.canvas = document.createElement("canvas");
 		this.ctx = this.canvas.getContext("2d");
@@ -83,4 +82,4 @@ class SkinvViewer2D {
 	}
 }
 
-export { SkinvViewer2D };
+export { SkinViewer2D };
